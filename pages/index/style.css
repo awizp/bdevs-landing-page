@@ -37,9 +37,18 @@
         color: var(--color-aqua-blue);
     }
 
-    .navbar_anchors .navbar_lists p a:hover,
+    .navbar_anchors .navbar_lists p:hover,
     .navbar_anchors .navbar_links .navbar_hamburger .navbar_icon:hover,
-    .navbar_anchors .navbar_links p a:hover {
+    .navbar_anchors .navbar_links p:hover {
+        color: var(--color-aqua-blue);
+    }
+
+    .navbar_links .mobile_navbar .mobile_navbar_lists a {
+        color: var(--color-black);
+        transition: color .3s ease;
+    }
+
+    .navbar_links .mobile_navbar .mobile_navbar_lists a:hover {
         color: var(--color-aqua-blue);
     }
 }

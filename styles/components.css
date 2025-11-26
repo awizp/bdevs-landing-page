@@ -253,15 +253,6 @@
             font-size: var(--fontsize-18);
         }
 
-        .navbar_anchors .navbar_links p a,
-        .navbar_hamburger label .navbar_icon {
-            font-size: var(--fontsize-16);
-        }
-
-        .navbar_anchors .navbar_links p .icon {
-            font-size: var(--fontsize-16);
-        }
-
         .navbar_anchors .navbar_links .mobile_navbar {
             width: 100%;
         }
