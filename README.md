@@ -28,7 +28,7 @@ This project demonstrates how to fetch and render multiple components dynamicall
 
 ### Screenshot
 
-![Webpage Design](https://awizp.github.io/bdevs-landing-page/images/design/bdevs-design.png)
+![Webpage Design](https://github.com/awizp/bdevs-landing-page/blob/main/images/design/bdevs.png)
 
 ### Live Demo
 https://awizp.github.io/bdevs-landing-page/pages/index/index.html
