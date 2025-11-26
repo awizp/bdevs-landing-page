@@ -22,8 +22,7 @@ This project demonstrates how to fetch and render multiple components dynamicall
 
 1. Clone this repository to your local machine
 
-```git clone https://github.com/awizp/bdevs-landing-page.git
-```
+``````git clone https://github.com/awizp/bdevs-landing-page.git``````
 
 2. Open the ```index.html``` file in your browser to view the project.
 
