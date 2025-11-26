@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+    <title>BDevs | Shop Grid & Sidebar</title>
+</head>
+
+<body>
+    <!-- ***** Minibar component ***** -->
+    <div class="minibar_container wrapper"></div>
+
+    <!-- ***** Navbar component ***** -->
+    <nav class="navbar_container wrapper"></nav>
+
+    <!-- ***** Hero component ***** -->
+    <section class="shopgrid_hero_section wrapper">
+        <div class="grid_container display_flex justify-between align-center flex-gap-150">
+            <div class="shopgrid_hero_content display_flex flex-column justify-between align-start flex-gap-50">
+                <h1>Shop Grid View</h1>
+                <p>Always explain to you how all this mistaken denouncing pleasure and praising pain <span>$99.99</span>
+                    only</p>
+            </div>
+
+            <div class="shopgrid_hero_image">
+                <img src="../../images/banner-server 1.png" alt="Bannner server 1">
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Main component ***** -->
+    <section class="shopgrid_main_section wrapper">
+        <div class="grid_container display_flex flex-column justify-between align-center flex-gap-150">
+
+            <div class="shopgrid_main_lists display_flex justify-between align-center flex-gap-50">
+                <input type="checkbox" class="display_hidden" id="filter">
+
+                <div class="shopgrid_filter_page display_flex justify-between align-center flex-gap-150">
+                    <label for="filter" class="display_flex justify-center align-center">
+                        Sort by
+                        <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+                    </label>
+                    <p>Showing 1-12 of 42 results</p>
+                    <div class="display_flex justify-center align-center flex-gap-50">
+                        <p>View as:</p>
+                        <ion-icon class="icon-menu" name="list-outline"></ion-icon>
+                        <ion-icon class="icon-menu" name="grid-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="shopgrid_filter_tab">
+                    <div class="shopgrid_filter_price">
+                        <h4>Filter by Price</h4>
+                        <div class="slider">
+                            <input type="range" min="0" max="500" value="5">
+                        </div>
+                        <p>Price : $0 - $500</p>
+                    </div>
+
+                    <div class="shopgrid_filter_category">
+                        <h4>Category</h4>
+                        <p>Accessories <span>(15)</span></p>
+                        <p>RAM <span>(8)</span></p>
+                        <p>CPU <span>(73)</span></p>
+                        <p>Monitor <span>(14)</span></p>
+                        <p>Lamp <span>(43)</span></p>
+                        <p>Sound <span>(13)</span></p>
+                        <p>Server <span>(5)</span></p>
+                        <p>Fan <span>(24)</span></p>
+                        <p>Power Supply <span>(33)</span></p>
+                    </div>
+
+                    <div class="shopgrid_filter_products">
+                        <h4>Products</h4>
+                        <div class="filter_product">
+                            <div class="img_container">
+                                <img src="../../images/intel-processor.png" alt="Intel Processor">
+                            </div>
+                            <div>
+                                <p>Intel Processor CORE I5</p>
+                                <p>$380.00</p>
+                            </div>
+                        </div>
+
+                        <div class="filter_product">
+                            <div class="img_container">
+                                <img src="../../images/speaker.png" alt="Speaker">
+                            </div>
+                            <div>
+                                <p>Daniel CPU Black</p>
+                                <p>$80.00</p>
+                            </div>
+                        </div>
+
+                        <div class="filter_product">
+                            <div class="img_container">
+                                <img src="../../images/cpu.png" alt="CPU">
+                            </div>
+                            <div>
+                                <p>Daniel Wellington Black</p>
+                                <p>$80.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shopgrid_filter_tags">
+                        <h4>Tags</h4>
+                        <div>
+                            <p for="tags">Shop</p>
+                            <p for="tags">Ecommerce</p>
+                            <p for="tags">Men</p>
+                            <p for="tags">Women</p>
+                            <p for="tags">Computer</p>
+                            <p for="tags">Mobile</p>
+                        </div>
+                    </div>
+
+                    <label for="filter">
+                        <ion-icon class="icon" name="caret-back-outline"></ion-icon>
+                    </label>
+                </div>
+            </div>
+
+            <div class="shopgrid_main_content">
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/intel-4th-gen-processor.png" alt="Intel Processor">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        Intel Processor
+                    </p>
+                    <p class="card_price">
+                        $179.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/hp-cpu.png" alt="HP CPU">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        HP Generation CPU
+                    </p>
+                    <p class="card_price">
+                        $249.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/pdf-cpr-ebook.png" alt="PDF CPR Ebook">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        PDF CPR eBook
+                    </p>
+                    <p class="card_price">
+                        $59.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/smart-cpu.png" alt="Smart CPU">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        Smart CPU
+                    </p>
+                    <p class="card_price">
+                        $379.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/intel-ram.png" alt="Intel RAM">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        Intel RAM
+                    </p>
+                    <p class="card_price">
+                        $49.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/3-server.png" alt="Server">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        Intel Processor
+                    </p>
+                    <p class="card_price">
+                        $249.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/led-monitor-hp.png" alt="LED Monitor HP">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        LED Monitor HP
+                    </p>
+                    <p class="card_price">
+                        $59.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/mordern-sound.png" alt="Modern Sound">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        Modern Sound
+                    </p>
+                    <p class="card_price">
+                        $79.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/intel-4th-gen-processor.png" alt="Intel Processor">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        Intel Processor
+                    </p>
+                    <p class="card_price">
+                        $179.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/hp-cpu.png" alt="HP CPU">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        HP Generation CPU
+                    </p>
+                    <p class="card_price">
+                        $249.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/pdf-cpr-ebook.png" alt="PDF CPR Ebook">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        PDF CPR eBook
+                    </p>
+                    <p class="card_price">
+                        $59.00
+                    </p>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_image">
+                        <div class="img_container">
+                            <img src="../../images/smart-cpu.png" alt="Smart CPU">
+                            <a href="../shopdetails/shopdetails.html" class="img_overlay">
+                            </a>
+                            <a href="../shopdetails/shopdetails.html" class="btn">Details</a>
+                        </div>
+                    </div>
+                    <p class="card_title">
+                        Smart CPU
+                    </p>
+                    <p class="card_price">
+                        $379.00
+                    </p>
+                </div>
+            </div>
+
+            <div class="shopgrid_main_pagelist display_flex justify-center align-center flex-gap-100">
+                <p class="num">1</p>
+                <p class="num">2</p>
+                <p class="num">3</p>
+                <p>Next</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer component ***** -->
+    <footer class="footer_container wrapper"></footer>
+
+    <!-- ***** Icons scripts ***** -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

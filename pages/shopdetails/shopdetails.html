@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+    <title>BDevs | Shop Details</title>
+</head>
+
+<body>
+    <!-- ***** Minibar component ***** -->
+    <div class="minibar_container wrapper"></div>
+
+    <!-- ***** Navbar component ***** -->
+    <nav class="navbar_container wrapper"></nav>
+
+    <!-- ***** Hero component ***** -->
+    <section class="shopdetails_hero_section wrapper">
+        <div class="grid_container display_flex justify-between align-center flex-gap-150">
+            <div class="shopdetails_hero_content display_flex flex-column justify-between align-start flex-gap-50">
+                <h1>Shop Details</h1>
+                <p>Always explain to you how all this mistaken denouncing pleasure and praising pain <span>$99.99</span>
+                    only</p>
+            </div>
+
+            <div class="shopdetails_hero_image">
+                <img src="../../images/banner-server 1.png" alt="Bannner server 1">
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Product component ***** -->
+    <section class="shopdetails_product_section wrapper">
+        <div class="grid_container display_flex flex-column justify-between align-center flex-gap-150">
+            <div class="shopdetails_product_image">
+                <img src="../../images/3-server.png" alt="Server image">
+                <ion-icon class="icon-right" name="arrow-forward-outline"></ion-icon>
+                <ion-icon class="icon-left" name="arrow-back-outline"></ion-icon>
+            </div>
+
+            <div class="shopdetails_product_content display_flex flex-column justify-between align-center flex-gap-50">
+                <h2>HP Server Wqvr01 - 2022</h2>
+                <h3>$529.00</h3>
+                <p class="available">
+                    Availability: 25000 in stock
+                </p>
+                <p class="content">
+                    But I must explain to you how all this mistaken idea of denouncing pleassure and praising pain was
+                    born and I will give you a complete account of the system and expound
+                    the actual teaching of the great explorer of the truth the master-build of human.
+                </p>
+                <div class="input_group display_flex align-center justify-center flex-gap-50">
+                    <div class="input_form display_flex justify-center align-center">
+                        <ion-icon class="icon" name="remove-outline"></ion-icon>
+                        <input type="number" value="1">
+                        <ion-icon class="icon" name="add-outline"></ion-icon>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="shopdetails_product_social display_flex flex-column justify-between align-start">
+                <div class="wishlist display_flex justify-center align-center flex-gap-100">
+                    <p class="display_flex align-center flex-gap-50">
+                        <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        Add to wishlist
+                    </p>
+                    <p class="display_flex align-center flex-gap-50">
+                        <ion-icon class="icon" name="options-outline"></ion-icon>
+                        Compare
+                    </p>
+                </div>
+
+                <p>Categories: <span>Accessories,</span> <span>Cooking</span></p>
+                <p>Tags: <span>Spies,</span> <span>Food</span></p>
+
+                <div class="share display_flex align-center">
+                    <p>Share:</p>
+                    <div class="img_container">
+                        <img src="../../images/fb-like.png" alt="Like png">
+                    </div>
+                    <div class="img_container">
+                        <img src="../../images/twitter.png" alt="Twitter png">
+                    </div>
+                    <div class="img_container">
+                        <img src="../../images/google-plus.png" alt="Google plus">
+                    </div>
+                    <div class="img_container">
+                        <img src="../../images/pin-it.png" alt="Pin it png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Review component ***** -->
+    <section class="shopdetails_review_Section wrapper">
+        <div class="grid_container display_flex flex-column justify-between align-start flex-gap-150">
+            <div class="shopdetails_review_subtitle display_flex justify-start align-center flex-gap-150">
+                <p>Description</p>
+                <p>Reviews(1)</p>
+            </div>
+
+            <div class="shopdetails_review_details display_flex justify-between align-start flex-gap-150">
+
+                <div class="shopdetails_review_content display_flex flex-column justify-center flex-gap-100">
+                    <h3>2 Review for Simple Product 007</h3>
+
+                    <div class="review_body">
+                        <div class="review display_flex justify-center align-start flex-gap-50">
+                            <div class="img_container">
+                                <img src="../../images/man-1.png" alt="Man image">
+                            </div>
+                            <div>
+                                <p>Alexander, <span>25 Jun 2023</span></p>
+                                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                                        deleniti!</span></p>
+                            </div>
+                        </div>
+
+                        <div class="review display_flex justify-center align-start flex-gap-50">
+                            <div class="img_container">
+                                <img src="../../images/girl-2.png" alt="Girl image">
+                            </div>
+                            <div>
+                                <p>Angelina, <span>25 Jun 2023</span></p>
+                                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                                        deleniti!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopdetails_review_form display_flex flex-column justify-center flex-gap-100">
+                    <h3>Add a review</h3>
+
+                    <div class="form_group display_flex flex-column justify-center align-start flex-gap-50">
+                        <input type="text" placeholder="Your Name:">
+                        <input type="text" placeholder="Your Email:">
+                        <div class="display_flex flex-gap-50 justify-start align-center">
+                            <h4>Your Rating:</h4>
+                            <ion-icon class="icon" name="star-outline"></ion-icon>
+                            <ion-icon class="icon" name="star-outline"></ion-icon>
+                            <ion-icon class="icon" name="star-outline"></ion-icon>
+                            <ion-icon class="icon" name="star-outline"></ion-icon>
+                            <ion-icon class="icon" name="star-outline"></ion-icon>
+                        </div>
+                        <textarea placeholder="Your review"></textarea>
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer component ***** -->
+    <footer class="footer_container wrapper"></footer>
+
+    <!-- ***** Icons scripts ***** -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+/****** Hero component ******/
+@layer shopgrid-hero {
+    .shopgrid_hero_section {
+        background: var(--linear-gradient);
+        color: var(--color-black);
+    }
+
+    .shopgrid_hero_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .shopgrid_hero_section .shopgrid_hero_content {
+        width: 100%;
+        gap: 2rem;
+        color: var(--color-light-white);
+    }
+
+    .shopgrid_hero_section .shopgrid_hero_content h1 {
+        font-family: var(--font-montserrat);
+        text-transform: uppercase;
+    }
+
+    .shopgrid_hero_section .shopgrid_hero_content p {
+        font-size: var(--fontsize-18);
+    }
+
+    .shopgrid_hero_section .shopgrid_hero_content p span {
+        color: orange;
+    }
+
+    .shopgrid_hero_section .shopgrid_hero_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .shopgrid_hero_section .shopgrid_hero_image img {
+        object-fit: contain;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .shopgrid_hero_section > .grid_container {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+/****** Main component ******/
+@layer shopgrid-main {
+    .shopgrid_main_section {
+        background: var(--color-light-white);
+        color: var(--color-black);
+        position: relative;
+    }
+
+    .shopgrid_main_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+        gap: 2rem;
+    }
+
+    .shopgrid_main_section .shopgrid_main_lists {
+        width: 100%;
+    }
+
+    .shopgrid_main_section .shopgrid_main_lists input[type="checkbox"]:checked ~ div.shopgrid_filter_tab {
+        transform: translateX(0);
+    }
+
+    .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_page {
+        width: 100%;
+    }
+
+    .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_page label {
+        border: 1px solid var(--color-gray);
+        padding: .75rem 1.25rem;
+        cursor: pointer;
+    }
+
+    .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_page p,
+    .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_page div p {
+        color: var(--color-text-mute);
+    }
+
+    .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_page .icon-menu {
+        padding: .25rem;
+        border: 1px solid var(--color-gray);
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+
+    .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_page .icon-menu:hover {
+        background: var(--color-main-blue);
+        color: var(--color-white);
+        border-color: var(--color-main-blue);
+    }
+
+    .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_tab {
+        width: calc(450/16 *1rem);
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        background: var(--color-white);
+        padding: 3rem 2rem;
+        transition: all .5s ease-in-out;
+        transform: translateX(-150%);
+        z-index: 3;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_tab label {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        cursor: pointer;
+
+        border: 1px solid var(--color-gray);
+        padding: .25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_price,
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_category,
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_products,
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_tags {
+        padding: 1rem 0;
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_price h4,
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_category h4,
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_products h4,
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_tags h4 {
+        font-size: var(--fontsize-18);
+        font-family: var(--font-montserrat);
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_price input {
+        width: 80%;
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_price p,
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_category p {
+        width: 100%;
+        color: var(--color-dark-gray);
+        transition: color .3s ease;
+        cursor: default;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_category p:hover {
+        color: var(--color-main-blue);
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_products {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_products .filter_product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_products .filter_product .img_container {
+        width: calc(80/16*1rem);
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_products .filter_product p {
+        color: var(--color-dark-gray);
+        font-size: var(--fontsize-14);
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_tags div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_tags div p {
+        padding: .5rem;
+        border: 1px solid var(--color-light-gray);
+        border-radius: 2px;
+        font-size: var(--fontsize-14);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: var(--color-dark-gray);
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+
+    .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_tags div p:hover {
+        background: var(--color-main-blue);
+        border-color: var(--color-main-blue);
+        color: var(--color-white);
+    }
+
+    .shopgrid_main_section .shopgrid_main_content {
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .shopgrid_main_section .shopgrid_main_content .product_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shopgrid_main_section .shopgrid_main_content .product_card .product_image {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1.5rem;
+        transition: all .3s ease;
+
+        background: var(--color-light-gray);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .shopgrid_main_content .product_card .product_image:hover a.img_overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+        background: var(--linear-gradient2);
+        opacity: .95;
+    }
+
+    .shopgrid_main_content .product_card .product_image .btn {
+        display: none;
+    }
+
+    .shopgrid_main_content .product_card .product_image:hover .btn {
+        width: 80%;
+        padding: .5rem .75rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--fontsize-14);
+
+        border: 1px solid var(--color-dark-blue);
+        border-radius: 25px;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .shopgrid_main_content .product_card .product_image:hover .btn:hover {
+        border: 1px solid var(--color-white);
+        background: var(--color-main-blue);
+        color: var(--color-white);
+    }
+
+    .shopgrid_main_section .shopgrid_main_content .product_card .card_title {
+        color: var(--color-text-mute);
+    }
+
+    .shopgrid_main_section .shopgrid_main_content .product_card .card_price {
+        font-weight: 600;
+    }
+
+    .shopgrid_main_section .shopgrid_main_content .product_card .img_container {
+        width: calc(90/16 *1rem);
+    }
+
+    .shopgrid_main_section .shopgrid_main_pagelist {
+        width: fit-content;
+    }
+
+    .shopgrid_main_section .shopgrid_main_pagelist p.num {
+        width: calc(30/16 *1rem);
+        height: calc(30/16 *1rem);
+        border-radius: 50%;
+        background: var(--color-gray);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shopgrid_main_section .shopgrid_main_pagelist p.num:hover {
+        background: var(--color-main-blue);
+        color: var(--color-white);
+    }
+
+    .shopgrid_main_section .shopgrid_main_pagelist p {
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(992/16 *1rem)) {
+        .shopgrid_main_section .shopgrid_main_content {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_page {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_page > p {
+            order: 1;
+        }
+
+        .shopgrid_main_section .shopgrid_main_lists .shopgrid_filter_tab {
+            width: 100%;
+        }
+
+        .shopgrid_main_lists .shopgrid_filter_tab .shopgrid_filter_tags div {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .shopgrid_main_section .shopgrid_main_content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

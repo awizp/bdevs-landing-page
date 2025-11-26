@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+    <title>BDevs | Blog Grid & Sidebar</title>
+</head>
+
+<body>
+    <!-- ***** Minibar component ***** -->
+    <div class="minibar_container wrapper"></div>
+
+    <!-- ***** Navbar component ***** -->
+    <nav class="navbar_container wrapper"></nav>
+
+    <!-- ***** Hero component ***** -->
+    <section class="bloggrid_hero_section wrapper">
+        <div class="grid_container display_flex justify-between align-center flex-gap-150">
+            <div class="bloggrid_hero_content display_flex flex-column justify-between align-start flex-gap-50">
+                <h1>Blog Grid</h1>
+                <p>Always explain to you how all this mistaken denouncing pleasure and praising pain <span>$99.99</span>
+                    only</p>
+            </div>
+
+            <div class="bloggrid_hero_image">
+                <img src="../../images/banner-server 1.png" alt="Bannner server 1">
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Product component ***** -->
+    <section class="blog_product_section wrapper">
+        <div class="grid_container display_flex flex-column justify-between flex-gap-150">
+            <input type="checkbox" class="display_hidden" id="sidebar">
+
+            <label class="sidebar_open" for="sidebar">
+                <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
+            </label>
+
+            <div class="blog_sidebar_section grid_fullbleed">
+                <div class="blog_sidebar_search">
+                    <div class="form_group display_flex align-center flex-gap-50">
+                        <input type="text" placeholder="Enter Keyword Here">
+                        <ion-icon class="icon" name="search-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="blog_sidebar_category">
+                    <h4>Category</h4>
+                    <p>-VPS Hosting</p>
+                    <p>Cloud Hosting</p>
+                    <p>Reseller Hosting</p>
+                    <p>Shared Hosting</p>
+                    <p>Web Hosting</p>
+                </div>
+
+                <div class="blog_sidebar_news">
+                    <h4>Recent News</h4>
+
+                    <div class="news_group display_flex justify-center align-center flex-gap-50">
+                        <div class="img_container">
+                            <img src="../../images/laptop.png" alt="Laptop image">
+                        </div>
+                        <div class="news">
+                            <p>Building Diverse Design Teams Innovation</p>
+                            <p>25 Aug 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="news_group display_flex justify-center align-center flex-gap-50">
+                        <div class="img_container">
+                            <img src="../../images/desktop.png" alt="Desktop image">
+                        </div>
+                        <div class="news">
+                            <p>Building Diverse Design Teams Innovation</p>
+                            <p>25 Aug 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="news_group display_flex justify-center align-center flex-gap-50">
+                        <div class="img_container">
+                            <img src="../../images/server-5.png" alt="Server image">
+                        </div>
+                        <div class="news">
+                            <p>Building Diverse Design Teams Innovation</p>
+                            <p>25 Aug 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog_sidebar_tags">
+                    <h4>Popular Tags</h4>
+
+                    <div>
+                        <p>Shop</p>
+                        <p>Ecommerce</p>
+                        <p>Men</p>
+                        <p>Women</p>
+                        <p>Computer</p>
+                        <p>Mobile</p>
+                    </div>
+                </div>
+
+                <label class="sidebar_close" for="sidebar">
+                    <ion-icon class="icon" name="caret-back-outline"></ion-icon>
+                </label>
+            </div>
+
+            <div class="blog_product_content">
+                <a href="../blogdetails/blogdetails.html" class="product_card">
+                    <div class="card_image">
+                        <img src="../../images/internet.png" alt="Internet image">
+                    </div>
+                    <h4 class="card_title">
+                        Making Distributed Product Teams Work More Efficiently Com.
+                    </h4>
+                    <div class="card_author display_flex flex-gap-100">
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                            Author
+                        </p>
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                            Comments(05)
+                        </p>
+                    </div>
+                    <p class="card_comment">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure
+                    </p>
+                </a>
+
+                <a href="../blogdetails/blogdetails.html" class="product_card">
+                    <div class="card_image">
+                        <img src="../../images/rj45.png" alt="RJ45 image">
+                    </div>
+                    <h4 class="card_title">
+                        User Experience Phsycology And Performance Videos
+                    </h4>
+                    <div class="card_author display_flex flex-gap-100">
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                            Author
+                        </p>
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                            Comments(05)
+                        </p>
+                    </div>
+                    <p class="card_comment">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure
+                    </p>
+                </a>
+
+                <a href="../blogdetails/blogdetails.html" class="product_card">
+                    <div class="card_image">
+                        <img src="../../images/sever-to-laptop.png" alt="Server to laptop image">
+                    </div>
+                    <h4 class="card_title">
+                        We Are Just Getting Started 1000 Smashing Memebers
+                    </h4>
+                    <div class="card_author display_flex flex-gap-100">
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                            Author
+                        </p>
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                            Comments(05)
+                        </p>
+                    </div>
+                    <p class="card_comment">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure
+                    </p>
+                </a>
+
+                <a href="../blogdetails/blogdetails.html" class="product_card">
+                    <div class="card_image">
+                        <img src="../../images/server-room.png" alt="Server Room image">
+                    </div>
+                    <h4 class="card_title">
+                        Introduction To animation and the iMessage App store
+                    </h4>
+                    <div class="card_author display_flex flex-gap-100">
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                            Author
+                        </p>
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                            Comments(05)
+                        </p>
+                    </div>
+                    <p class="card_comment">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure
+                    </p>
+                </a>
+
+                <a href="../blogdetails/blogdetails.html" class="product_card">
+                    <div class="card_image">
+                        <img src="../../images/holyday-session.png" alt="holyday session image">
+                    </div>
+                    <h4 class="card_title">
+                        Get your mobile site mobile ready for the 2018 holiday seasion
+                    </h4>
+                    <div class="card_author display_flex flex-gap-100">
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                            Author
+                        </p>
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                            Comments(05)
+                        </p>
+                    </div>
+                    <p class="card_comment">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure
+                    </p>
+                </a>
+
+                <a href="../blogdetails/blogdetails.html" class="product_card">
+                    <div class="card_image">
+                        <img src="../../images/laptop-security.png" alt="Laptop security image">
+                    </div>
+                    <h4 class="card_title">
+                        Making Distributed Product Teams Work More Efficiently
+                    </h4>
+                    <div class="card_author display_flex flex-gap-100">
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                            Author
+                        </p>
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                            Comments(05)
+                        </p>
+                    </div>
+                    <p class="card_comment">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure
+                    </p>
+                </a>
+
+                <a href="../blogdetails/blogdetails.html" class="product_card">
+                    <div class="card_image">
+                        <img src="../../images/audio-visualizer.png" alt="audio visualizer image">
+                    </div>
+                    <h4 class="card_title">
+                        Onboarding users of your product from trail to product
+                    </h4>
+                    <div class="card_author display_flex flex-gap-100">
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                            Author
+                        </p>
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                            Comments(05)
+                        </p>
+                    </div>
+                    <p class="card_comment">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure
+                    </p>
+                </a>
+
+                <a href="../blogdetails/blogdetails.html" class="product_card">
+                    <div class="card_image">
+                        <img src="../../images/internet.png" alt="Internet image">
+                    </div>
+                    <h4 class="card_title">
+                        Making Distributed Product Teams Work More Efficiently Com.
+                    </h4>
+                    <div class="card_author display_flex flex-gap-100">
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                            Author
+                        </p>
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                            Comments(05)
+                        </p>
+                    </div>
+                    <p class="card_comment">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure
+                    </p>
+                </a>
+
+                <a href="../blogdetails/blogdetails.html" class="product_card">
+                    <div class="card_image">
+                        <img src="../../images/holyday-session.png" alt="holyday session image">
+                    </div>
+                    <h4 class="card_title">
+                        Get your mobile site mobile ready for the 2018 holiday seasion
+                    </h4>
+                    <div class="card_author display_flex flex-gap-100">
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                            Author
+                        </p>
+                        <p class="display_flex align-center flex-gap-50">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                            Comments(05)
+                        </p>
+                    </div>
+                    <p class="card_comment">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure
+                    </p>
+                </a>
+            </div>
+
+            <div class="blog_product_page display_flex flex-gap-50 align-center">
+                <p class="num">1</p>
+                <p class="num">2</p>
+                <p class="num">3</p>
+                <p class="num">4</p>
+                <p>Next</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer component ***** -->
+    <footer class="footer_container wrapper"></footer>
+
+    <!-- ***** Icons scripts ***** -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

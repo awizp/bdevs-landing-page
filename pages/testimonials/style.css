@@ -1,0 +1,48 @@
+/****** Hero component ******/
+@layer testimonials-hero {
+    .testimonials_hero_section {
+        background: var(--linear-gradient);
+        color: var(--color-black);
+    }
+
+    .testimonials_hero_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .testimonials_hero_section .testimonials_hero_content {
+        width: 100%;
+        gap: 2rem;
+        color: var(--color-light-white);
+    }
+
+    .testimonials_hero_section .testimonials_hero_content h1 {
+        font-family: var(--font-montserrat);
+        text-transform: uppercase;
+    }
+
+    .testimonials_hero_section .testimonials_hero_content p {
+        font-size: var(--fontsize-18);
+    }
+
+    .testimonials_hero_section .testimonials_hero_content p span {
+        color: orange;
+    }
+
+    .testimonials_hero_section .testimonials_hero_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonials_hero_section .testimonials_hero_image img {
+        object-fit: contain;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .testimonials_hero_section > .grid_container {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

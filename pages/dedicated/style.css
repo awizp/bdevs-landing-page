@@ -1,0 +1,117 @@
+/****** Hero component ******/
+@layer dedicated-hero {
+    .dedicated_hero_section {
+        background: var(--linear-gradient);
+        color: var(--color-black);
+    }
+
+    .dedicated_hero_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .dedicated_hero_section .dedicated_hero_content {
+        width: 100%;
+        gap: 2rem;
+        color: var(--color-light-white);
+    }
+
+    .dedicated_hero_section .dedicated_hero_content h1 {
+        font-family: var(--font-montserrat);
+        text-transform: uppercase;
+    }
+
+    .dedicated_hero_section .dedicated_hero_content p {
+        font-size: var(--fontsize-18);
+    }
+
+    .dedicated_hero_section .dedicated_hero_content p span {
+        color: orange;
+    }
+
+    .dedicated_hero_section .dedicated_hero_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dedicated_hero_section .dedicated_hero_image img {
+        object-fit: contain;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .dedicated_hero_section > .grid_container {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+/****** Features component ******/
+@layer dedicated-features {
+    .dedicated_features_container {
+        background: var(--color-white);
+        color: var(--color-black)
+    }
+
+    .dedicated_features_container > .grid_container {
+        width: 100%;
+        gap: 2rem;
+        padding: 3rem 0;
+    }
+
+    .dedicated_features_container .dedicated_features_title {
+        width: 100%;
+    }
+
+    .dedicated_features_container .dedicated_features_title h2 {
+        font-family: var(--font-montserrat);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .dedicated_features_container .dedicated_features_title p {
+        text-align: center;
+        color: var(--color-text-mute);
+    }
+}
+
+/****** Pricing1 component ******/
+@layer dedicated-pricing1 {
+    .pricing1_container {
+        background: var(--color-light-white);
+        color: var(--color-black);
+        padding: 3rem 0;
+    }
+}
+
+/****** Pricing2 component ******/
+@layer dedicated-pricing2 {
+    .pricing2_container {
+        background: var(--color-white);
+        color: var(--color-black);
+        padding: 3rem 0;
+    }
+}
+
+/****** Purchase2 component ******/
+@layer dedicated-purchase2 {
+    .purchase2_container {
+        background: var(--linear-gradient);
+    }
+}
+
+/****** faq component ******/
+@layer dedicated-faq {
+    .faq_container {
+        background: var(--color-white);
+        padding: 3rem 0;
+    }
+}
+
+/****** Purchase2 component ******/
+@layer dedicated-testimonial2 {
+    .testimonial2_container {
+        background: var(--color-light-white);
+    }
+}

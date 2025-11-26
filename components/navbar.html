@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="grid_container display_flex justify-between align-center">
+        <!-- ****** Navbar logo ****** -->
+        <div class="navbar_logo display_flex justify-between align-center">
+            <div class=" img_container">
+                <img width="150px" height="150px" src="../../images/logo.png" alt="BDev Logo">
+            </div>
+            <p><span>B</span><span>Devs</span></p>
+        </div>
+
+        <div class="navbar_anchors display_flex justify-between align-center">
+            <!-- ****** Navbar navigation links ****** -->
+            <div class="navbar_lists display_flex justify-between align-center flex-gap-150">
+                <p><a href="../home/home.html">Home</a></p>
+                <p><a href="../home2/home2.html">Services</a></p>
+                <p><a href="../about/about.html">About</a></p>
+                <p><a href="../bloggrid/bloggrid.html">Blog</a></p>
+                <p><a href="../affiliate/affiliate.html">Affiliate</a></p>
+                <p><a href="../contact/contact.html">Contact</a></p>
+            </div>
+
+            <!-- ****** Navbar cart and hamburger ****** -->
+            <div class="navbar_links display_flex justify-between align-center flex-gap-150">
+                <p><a href="../domain/domain.html"><ion-icon class="icon" name="search-outline"></ion-icon></a></p>
+                <p><a href="../shopgrid/shopgrid.html"><ion-icon class="icon" name="cart-outline"></ion-icon></a></p>
+                <div class="vertical_line vertical_line_black"></div>
+                <div class="navbar_hamburger">
+                    <input class="display_hidden" type="checkbox" id="navbar_slider">
+                    <label for="navbar_slider">
+                        <ion-icon name="reorder-four-outline" class="navbar_icon"></ion-icon>
+                    </label>
+
+                    <!-- ****** Mobile lists ****** -->
+                    <div class="mobile_navbar display_hidden flex-column flex-gap-100 align-center justify-center">
+                        <div class="mobile_navbar_lists">
+                            <p>
+                                <label for="navbar_slider">
+                                    <a href="../home/home.html">Home</a>
+                                </label>
+                            </p>
+                            </label>
+                            <p>
+                                <label for="navbar_slider">
+                                    <a href="../home2/home2.html">Services</a>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="navbar_slider">
+                                    <a href="../about/about.html">About</a>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="navbar_slider">
+                                    <a href="../bloggrid/bloggrid.html">Blog</a>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="navbar_slider">
+                                    <a href="../affiliate/affiliate.html">Affiliate</a>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="navbar_slider">
+                                    <a href="../contact/contact.html">Contact</a>
+                                </label>
+                            </p>
+                        </div>
+
+                        <label for="navbar_slider">
+                            <ion-icon class="navbar_icon" name="close-outline"></ion-icon>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

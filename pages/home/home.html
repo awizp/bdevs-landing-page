@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="main.js"></script>
+    <title>BDevs | Home</title>
+</head>
+
+<body>
+    <!-- ***** Minibar component ***** -->
+    <div class="minibar_container wrapper"></div>
+
+    <!-- ***** Navbar component ***** -->
+    <nav class="navbar_container wrapper"></nav>
+
+    <!-- ***** Hero component ***** -->
+    <section class="home_hero_section wrapper">
+        <div class="grid_breakout display_flex justify-center align-center flex-gap-150">
+            <div class="home_hero_details display_flex flex-column justify-around align-start flex-gap-100">
+                <h1>Make your website with our hosting</h1>
+                <p>Always explain to you how all this mistaken denouncing praising and pleassure pain
+                    <span style="color:orange;">$99.99</span> only.
+                </p>
+                <button class="btn">Get started</button>
+            </div>
+
+            <div class="home_hero_banner">
+                <img src="../../images/banner-server 2.png" alt="Banner Server Image">
+            </div>
+        </div>
+
+        <!-- ***** Hero domain banner component ***** -->
+        <div class="home_domain_section grid_fullbleed">
+            <div class="home_domain_content display_flex align-end">
+                <div class="cloud_container">
+                    <svg class="cloud_svg" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"
+                        viewBox="0 0 800 600">
+                        <g fill="white" id="cloud" transform="matrix(1,0,0,1,20,60)">
+                            <path
+                                d="M -62.57485130447117 344.0119670936447 A  50 50 0 1 1 232.93413539132666 306.586800398227 A  50 50 0 1 1 475.14970187798235 385.62874068757014 A  50 50 0 1 1 613.4730860544535 343.11377373426967 A  50 50 0 1 1 891.0179333715382 399.99998775642075 A  50 50 0 1 1 -62.57485130447117 344.0119670936447 Z"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="home_domain_banner display_flex flex-column flex-gap-50 justify-center align-center">
+                    <p class="title">Find your best domain name</p>
+
+                    <div class="input_group display_flex align-center">
+                        <input type=" text" placeholder="Search your domain...">
+                        <div class="button_group display_flex align-center">
+                            <select name="domain" id="domain">
+                                <option value=".com">com</option>
+                                <option value=".net">net</option>
+                                <option value=".org">org</option>
+                                <option value=".biz">biz</option>
+                                <option value=".co">co</option>
+                                <option value=".edu">edu</option>
+                            </select>
+                            <button class="btn">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="domain_group">
+                        <p class="display_flex justify-between align-center flex-gap-50" style="color:orange;">
+                            .com <b>$4.99</b>
+                        </p>
+                        <p class="display_flex justify-between align-center flex-gap-50" style="color:blueviolet;">
+                            .org <b>$6.99</b>
+                        </p>
+                        <p class="display_flex justify-between align-center flex-gap-50" style="color:skyblue;">
+                            .net <b>$5.99</b>
+                        </p>
+                        <p class="display_flex justify-between align-center flex-gap-50" style="color:red;">
+                            .biz <b>$7.99</b>
+                        </p>
+                        <p class="display_flex justify-between align-center flex-gap-50" style="color:green;">
+                            .co <b>$7.99</b>
+                        </p>
+                        <p class="display_flex justify-between align-center flex-gap-50" style="color:blue;">
+                            .edu <b>$7.99</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cloud1_container">
+                    <svg class="cloud_svg" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"
+                        viewBox="0 0 800 600">
+                        <g fill="white" id="cloud" transform="matrix(1,0,0,1,20,60)">
+                            <path
+                                d="M -62.57485130447117 344.0119670936447 A  50 50 0 1 1 232.93413539132666 306.586800398227 A  50 50 0 1 1 475.14970187798235 385.62874068757014 A  50 50 0 1 1 613.4730860544535 343.11377373426967 A  50 50 0 1 1 891.0179333715382 399.99998775642075 A  50 50 0 1 1 -62.57485130447117 344.0119670936447 Z"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Why Choose Us comonent ***** -->
+    <section class="home_choose_section wrapper">
+        <div class="grid_container display_flex flex-column justify-between align-center flex-gap-150">
+            <div class="home_choose_title">
+                <h2>why choose us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit odio, alias ad corporis
+                    laboriosam.
+                </p>
+            </div>
+
+            <div class="home_choose_details display_flex flex-gap-150 justify-between align-end">
+                <div class="home_choose_input display_flex flex-column justify-between align-start">
+                    <div class="input_group">
+                        <input class="display_hidden" type="radio" name="choose" id="security" value="security" checked>
+                        <label for="security">Guaranteed Security</label>
+                    </div>
+                    <div class="input_group">
+                        <input class="display_hidden" type="radio" name="choose" id="technology" value="technology">
+                        <label for="technology">Advanced Technology</label>
+                    </div>
+                    <div class="input_group">
+                        <input class="display_hidden" type="radio" name="choose" id="credibility" value="credibility">
+                        <label for="credibility"> Boost Credibility</label>
+                    </div>
+                    <div class="input_group">
+                        <input class="display_hidden" type="radio" name="choose" id="update" value="update">
+                        <label for="update">Free Update</label>
+                    </div>
+                </div>
+
+                <div class="home_choose_content display_flex flex-column justify-between align-start flex-gap-50">
+                    <div class="img_container">
+                        <img src="../../images/database-security.png" alt="Database Security Image">
+                    </div>
+
+                    <p class="content">
+                        But I must explain to you how all this mistaken idea of denouncing pleassure and praising pain
+                        was
+                    </p>
+                </div>
+
+                <div class="home_choose_blob display_flex flex-column flex-gap-100 justify-between">
+                    <div class="small_blob"></div>
+                    <div class="big_blob"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Pricing component ***** -->
+    <div class="home_pricing_container">
+        <div class="small_blob"></div>
+        <div class="big_blob"></div>
+
+        <div class="pricing1_container wrapper"></div>
+    </div>
+
+    <!-- ***** Hosting solution component ***** -->
+    <div class="home_solution_section wrapper">
+        <div class="grid_container display_flex flex-gap-100 justify-between align-center">
+            <div class="home_solution_details display_flex flex-column justify-between align-start">
+                <h2>We are the best hosting solution for your business</h2>
+                <div class="horizontal_line horizontal_line_blue"></div>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleassure and praising pain was
+                    but I must explain to you how all this mistaken idea of denouncing pleassure and praising pain was
+                </p>
+                <button class="btn">Read More</button>
+            </div>
+
+            <div class="home_solution_image img_container">
+                <img src="../../images/server-2.png" alt="Server Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Purchase component ***** -->
+    <div class="purchase1_container wrapper"></div>
+
+    <!-- ***** Service we provide component ***** -->
+    <div class="home_service_section wrapper">
+        <div class="grid_container display_flex flex-column justify-between align-center flex-gap-150">
+            <div class="home_service_title display_flex justify-between align-center flex-column flex-gap-100">
+                <h2>Service we provide</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea aut illum, placeat modi ratione.
+                </p>
+            </div>
+
+            <div class="home_service_content">
+                <div class="grid_content">
+                    <div class="home_service_card display_flex flex-column justify-between align-center">
+                        <div class="image img_container">
+                            <img src="../../images/web-hosting.png" alt="Web Hosting Image">
+                        </div>
+                        <p>Sed Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem doloribus</p>
+                    </div>
+
+                    <div class="home_service_card display_flex flex-column justify-between align-center">
+                        <div class="image img_container">
+                            <img src="../../images/shared-hosting.png" alt="Shared Hosting Image">
+                        </div>
+                        <p>Sed Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem doloribus</p>
+                    </div>
+
+                    <div class="home_service_card display_flex flex-column justify-between align-center">
+                        <div class="image img_container">
+                            <img src="../../images/reseller-hosting.png" alt="Reseller Hosting Image">
+                        </div>
+                        <p>Sed Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem doloribus</p>
+                    </div>
+
+                    <div class="home_service_card display_flex flex-column justify-between align-center">
+                        <div class="image img_container">
+                            <img src="../../images/dedicated-hosting.png" alt="Dedicated Hosting Image">
+                        </div>
+                        <p>Sed Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem doloribus</p>
+                    </div>
+
+                    <div class="home_service_card display_flex flex-column justify-between align-center">
+                        <div class="image img_container">
+                            <img src="../../images/vps-hosting.png" alt="VPS Hosting Image">
+                        </div>
+                        <p>Sed Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem doloribus</p>
+                    </div>
+
+                    <div class="home_service_card display_flex flex-column justify-between align-center">
+                        <div class="image img_container">
+                            <img src="../../images/cloud-hosting.png" alt="Cloud Hosting Image">
+                        </div>
+                        <p>Sed Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem doloribus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Why choose our service component ***** -->
+    <div class="service_container wrapper"></div>
+
+    <!-- ***** Clients component ***** -->
+    <div class="home_clients_container">
+        <div class="big_blob"></div>
+        <div class="testimonial1_container wrapper"></div>
+    </div>
+
+    <!-- ***** Partnered with companies component ***** -->
+    <div class="partner_container wrapper"></div>
+
+    <!-- ***** Footer component ***** -->
+    <footer class="footer_container wrapper"></footer>
+
+    <!-- ***** Icons scripts ***** -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+/****** Hero component ******/
+@layer contact-hero {
+    .contact_hero_section {
+        background: var(--linear-gradient);
+        color: var(--color-black);
+    }
+
+    .contact_hero_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .contact_hero_section .contact_hero_content {
+        width: 100%;
+        gap: 2rem;
+        color: var(--color-light-white);
+    }
+
+    .contact_hero_section .contact_hero_content h1 {
+        font-family: var(--font-montserrat);
+        text-transform: uppercase;
+    }
+
+    .contact_hero_section .contact_hero_content p {
+        font-size: var(--fontsize-18);
+    }
+
+    .contact_hero_section .contact_hero_content p span {
+        color: orange;
+    }
+
+    .contact_hero_section .contact_hero_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact_hero_section .contact_hero_image img {
+        object-fit: contain;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .contact_hero_section > .grid_container {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+/****** Services component ******/
+@layer contact-services {
+    .contact_services_section {
+        background: var(--color-light-white);
+        color: var(--color-black);
+    }
+
+    .contact_services_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .contact_services_section .contact_services_content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 2rem;
+    }
+
+    .contact_services_section .contact_services_content .service_card {
+        width: calc(250/16 *1rem);
+        height: calc(400/16 *1rem);
+        padding: 1.5rem 1.5rem 4rem;
+
+        background: var(--linear-gradient2);
+        color: var(--color-white);
+        border-radius: 2px;
+
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+
+        transition: transform .3s ease;
+        position: relative;
+        cursor: default;
+    }
+
+    .contact_services_section .contact_services_content .service_card:hover {
+        transform: translateY(-3px);
+    }
+
+    .contact_services_content .service_card::before {
+        content: '';
+        font-size: var(--fontsize-40);
+        font-weight: 700;
+        text-transform: uppercase;
+
+        position: absolute;
+        bottom: 2rem;
+        right: -20%;
+        opacity: .3;
+    }
+
+    .contact_services_content .service_card:nth-child(1)::before {
+        content: 'Address';
+    }
+
+    .contact_services_content .service_card:nth-child(2)::before {
+        content: 'Support';
+    }
+
+    .contact_services_content .service_card:nth-child(3)::before {
+        content: 'Let\'s Talk';
+    }
+
+    .contact_services_content .service_card .card_image {
+        width: calc(60/16 *1rem);
+        height: calc(80/16 *1rem);
+        justify-self: right;
+        z-index: 1;
+    }
+
+    .contact_services_content .service_card:nth-child(1) .card_image {
+        width: calc(100/16 *1rem);
+        height: calc(80/16 *1rem);
+    }
+
+    .contact_services_content .service_card .card_image img {
+        object-fit: cover;
+    }
+
+    .contact_services_content .service_card .card_title {
+        font-family: var(--font-montserrat);
+        position: relative;
+        z-index: 1;
+    }
+
+    .contact_services_content .service_card .card_title::before {
+        content: '';
+        width: 30%;
+        height: 2px;
+
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: var(--color-white);
+        border-radius: 5px;
+    }
+
+    .contact_services_content .service_card .card_footer {
+        z-index: 1;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(992/16 *1rem)) {
+        .contact_services_section .contact_services_content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: calc(600/16 *1rem)) {
+        .contact_services_section .contact_services_content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+/****** Map component ******/
+@layer contact-map {
+    .contact_map_section {
+        width: 100%;
+        background: var(--color-light-white);
+        color: var(--color-black);
+        position: relative;
+    }
+
+    .contact_map_section > .grid_fullbleed {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .contact_map_section .contact_map_location {
+        background: var(--color-white);
+        padding: 1rem 1.5rem;
+        border-radius: 2px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+
+    .contact_map_section .contact_map_location p {
+        color: var(--color-text-mute);
+        text-align: center;
+    }
+
+    .contact_map_section .contact_map_overlay {
+        width: 100%;
+        height: 100%;
+        background: var(--color-black);
+        opacity: .8;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .contact_map_section .contact_map_location {
+            padding: .5rem .25rem;
+        }
+
+        .contact_map_section .contact_map_location p {
+            font-size: var(--fontsize-14);
+        }
+    }
+}
+
+/****** Message component ******/
+@layer contact-message {
+    .contact_message_container {
+        background: var(--color-light-white);
+        color: var(--color-black);
+    }
+
+    .contact_message_container .grid_container {
+        background: var(--color-light-white);
+        padding: 3rem 0 0;
+        width: 100%;
+    }
+
+    .contact_message_container .contact_message_title {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact_message_container .contact_message_title h2 {
+        text-transform: uppercase;
+        font-family: var(--font-montserrat);
+    }
+
+    .contact_message_container .contact_message_title p {
+        color: var(--color-text-mute);
+    }
+
+    .contact_message_container .message_container {
+        padding: 0 0 3rem;
+        background-color: var(--color-light-white);
+    }
+}

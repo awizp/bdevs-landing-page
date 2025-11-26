@@ -1,0 +1,259 @@
+/****** Hero component ******/
+@layer affiliate-hero {
+    .affiliate_hero_section {
+        background: var(--linear-gradient);
+        color: var(--color-black);
+    }
+
+    .affiliate_hero_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .affiliate_hero_section .affiliate_hero_content {
+        width: 100%;
+        gap: 2rem;
+        color: var(--color-light-white);
+    }
+
+    .affiliate_hero_section .affiliate_hero_content h1 {
+        font-family: var(--font-montserrat);
+        text-transform: uppercase;
+    }
+
+    .affiliate_hero_section .affiliate_hero_content p {
+        font-size: var(--fontsize-18);
+    }
+
+    .affiliate_hero_section .affiliate_hero_content p span {
+        color: orange;
+    }
+
+    .affiliate_hero_section .affiliate_hero_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .affiliate_hero_section .affiliate_hero_image img {
+        object-fit: contain;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .affiliate_hero_section > .grid_container {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+/****** Features component ******/
+@layer affiliate-features {
+    .affiliate_features_section {
+        background: var(--color-white);
+        color: var(--color-black);
+    }
+
+    .affiliate_features_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+        gap: 3rem;
+    }
+
+    .affiliate_features_section > .grid_container > h3 {
+        width: 40%;
+        font-family: var(--font-montserrat);
+
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .affiliate_features_section .affiliate_features_content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(calc(200/16 *1rem), 1fr));
+        place-items: center;
+        gap: 2rem;
+    }
+
+    .affiliate_features_section .affiliate_features_content .features_card {
+        padding: 1.5rem 1rem;
+        cursor: default;
+        transition: transform .3s ease;
+
+        background: var(--color-white);
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .affiliate_features_section .affiliate_features_content .features_card p {
+        color: var(--color-text-mute);
+        text-align: center;
+    }
+
+    .affiliate_features_section .affiliate_features_content .features_card:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(992/16 *1rem)) {
+        .affiliate_features_section > .grid_container > h3 {
+            width: 60%;
+        }
+    }
+
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .affiliate_features_section > .grid_container > h3 {
+            width: 100%;
+        }
+    }
+}
+
+/****** Pricing component ******/
+@layer affiliate-pricing {
+    .affiliate_pricing_section {
+        background: var(--color-light-white);
+        color: var(--color-black);
+    }
+
+    .affiliate_pricing_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_title {
+        width: 100%;
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_title h3 {
+        text-transform: uppercase;
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_title p {
+        color: var(--color-text-mute);
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_title p span {
+        color: var(--color-main-blue);
+        font-weight: 500;
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(calc(225/16 *1rem), 1fr));
+        place-items: center;
+        gap: 2rem;
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card {
+        padding: 3rem 1rem;
+        transition: transform .3s ease;
+        cursor: default;
+        overflow: hidden;
+
+        background: var(--color-white);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: relative;
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card p:nth-child(1) {
+        font-size: var(--fontsize-20);
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--color-dark-gray);
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card p {
+        text-align: center;
+        color: var(--color-text-mute);
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card h3 {
+        font-family: var(--font-montserrat);
+        color: var(--color-dark-gray);
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card h3 span {
+        color: var(--color-main-blue);
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card .btn {
+        border-radius: 25px;
+        text-transform: uppercase;
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card::before,
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card::after {
+        content: '';
+        width: calc(50/16 *1rem);
+        height: calc(50/16 *1rem);
+        background: var(--color-main-blue);
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card::before {
+        left: -25px;
+        top: -25px;
+    }
+
+    .affiliate_pricing_section .affiliate_pricing_content .pricing_card::after {
+        right: -25px;
+        bottom: -25px;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(1300/16 *1rem)) {
+        .affiliate_pricing_section > .grid_container {
+            flex-direction: column;
+        }
+
+        .affiliate_pricing_section .affiliate_pricing_title {
+            width: 50%;
+            align-items: center;
+        }
+
+        .affiliate_pricing_section .affiliate_pricing_title p {
+            text-align: center;
+        }
+
+        .affiliate_pricing_section .affiliate_pricing_content {
+            grid-template-columns: repeat(auto-fit, minmax(calc(225/16 *1rem), 1fr));
+        }
+    }
+
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .affiliate_pricing_section .affiliate_pricing_title {
+            width: 100%;
+        }
+    }
+}
+
+/****** FAQ component ******/
+@layer affiliate-faq {
+    .faq_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+}
+
+/****** Purchase2 component ******/
+@layer affiliate-purchase2 {
+    .purchase2_container {
+        background: var(--linear-gradient);
+    }
+}
+
+/****** Purchase2 component ******/
+@layer affiliate-testimonial2 {
+    .testimonial2_container {
+        background: var(--color-light-white);
+    }
+}

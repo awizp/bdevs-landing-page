@@ -1,0 +1,256 @@
+/****** Hero component ******/
+@layer about-hero {
+    .about_hero_section {
+        background: var(--linear-gradient);
+        color: var(--color-black);
+    }
+
+    .about_hero_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .about_hero_section .about_hero_content {
+        width: 100%;
+        gap: 2rem;
+        color: var(--color-light-white);
+    }
+
+    .about_hero_section .about_hero_content h1 {
+        font-family: var(--font-montserrat);
+        text-transform: uppercase;
+    }
+
+    .about_hero_section .about_hero_content p {
+        font-size: var(--fontsize-18);
+    }
+
+    .about_hero_section .about_hero_content p span {
+        color: orange;
+    }
+
+    .about_hero_section .about_hero_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about_hero_section .about_hero_image img {
+        object-fit: contain;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(576/16 *1rem)) {
+        .about_hero_section > .grid_container {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+/****** Welcome component ******/
+@layer about-welcome {
+    .about_welcome_section {
+        background: var(--color-white);
+        color: var(--color-black);
+    }
+
+    .about_welcome_section > .grid_container {
+        width: 100%;
+        gap: 2rem;
+        padding: 3rem 0;
+    }
+
+    .about_welcome_section .about_welcome_content > * {
+        flex-basis: 100%;
+    }
+
+    .about_welcome_content .about_welcome_title h3 {
+        font-family: var(--font-montserrat);
+    }
+
+    .about_welcome_content .about_welcome_title p {
+        text-align: right;
+        color: var(--color-text-mute);
+    }
+
+    .about_welcome_content .about_welcome_title a {
+        color: var(--color-black);
+        font-weight: 500;
+    }
+
+    .about_welcome_content .about_welcome_title a .icon {
+        font-size: var(--fontsize-24);
+        color: var(--color-main-blue);
+    }
+
+    .about_welcome_content .about_welcome_details {
+        color: var(--color-text-mute);
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(576/16 * 1rem)) {
+        .about_welcome_section .about_welcome_content {
+            flex-direction: column;
+        }
+
+        .about_welcome_content .about_welcome_title {
+            align-items: flex-start;
+        }
+
+        .about_welcome_content .about_welcome_title p {
+            text-align: left;
+        }
+    }
+}
+
+/****** Video component ******/
+@layer about-video {
+    .about_video_section {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+
+        background: url("../../images/play-video.avif");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .about_video_section .about_video_overlay {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        background-color: black;
+        opacity: .8;
+    }
+
+    .about_video_section > .grid_container {
+        width: 100%;
+        color: var(--color-white);
+        z-index: 3;
+    }
+
+    .about_video_section > .grid_container a .icon {
+        color: var(--color-white);
+        font-size: var(--fontsize-56);
+        cursor: pointer;
+    }
+
+    .about_video_section > .grid_container h2 {
+        font-family: var(--font-montserrat);
+        text-align: center;
+    }
+
+    .about_video_section > .grid_container p {
+        text-align: center;
+    }
+}
+
+/****** Choose component ******/
+@layer about-choose {
+    .choose_container {
+        padding: 3rem 0;
+        border-bottom: 1px solid var(--color-gray);
+    }
+}
+
+/****** Team component ******/
+@layer about-team {
+    .about_team_section {
+        background: var(--color-white);
+        color: var(--color-black);
+    }
+
+    .about_team_section > .grid_container {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .about_team_section .about_team_title h2 {
+        font-family: var(--font-montserrat);
+        text-align: center;
+    }
+
+    .about_team_section .about_team_title p {
+        color: var(--color-text-mute);
+        text-align: center;
+    }
+
+    .about_team_section .about_team_content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        gap: 2rem;
+    }
+
+    .about_team_section .about_team_content .team_card {
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+        overflow: hidden;
+        transition: all .3s ease;
+    }
+
+    .about_team_section .about_team_content .team_card .card_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about_team_section .about_team_content .team_card .card_details {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        padding: .75rem;
+
+        background: var(--color-black);
+        color: var(--color-white);
+        opacity: 0;
+    }
+
+    .about_team_section .about_team_content .team_card .card_details p,
+    .about_team_section .about_team_content .team_card .card_details h3 {
+        text-align: center;
+    }
+
+    .about_team_section .about_team_content .team_card:hover .card_details {
+        opacity: .8;
+    }
+
+    .about_team_section .about_team_content .team_card .card_socials {
+        cursor: pointer;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: calc(768/16 *1rem)) {
+        .about_team_section .about_team_content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: calc(500/16 *1rem)) {
+        .about_team_section .about_team_content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+/****** Purchase2 component ******/
+@layer about-purchase2 {
+    .purchase2_container {
+        background: var(--linear-gradient);
+    }
+}
+
+/****** Purchase2 component ******/
+@layer about-testimonial2 {
+    .testimonial2_container {
+        background: var(--color-light-white);
+    }
+}
