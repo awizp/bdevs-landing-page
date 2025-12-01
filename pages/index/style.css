@@ -244,6 +244,12 @@
         .index_hero_section .laptop_image {
             display: none;
         }
+
+        .index_hero_title h1,
+        .index_hero_title p {
+            width: 100%;
+            text-align: left;
+        }
     }
 
     @media screen and (max-width:calc(400/16 *1rem)) {
